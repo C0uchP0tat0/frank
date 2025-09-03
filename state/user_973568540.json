@@ -1,0 +1,25 @@
+{
+  "vacancy_key": "python_se",
+  "q_index": 0,
+  "answers": [
+    "/cancel"
+  ],
+  "history": [
+    {
+      "role": "user",
+      "content": "/cancel"
+    }
+  ],
+  "followup_polls": [],
+  "followup_answers": [],
+  "followup_meta": {},
+  "pending_clarification": null,
+  "pending_followup_qindex": null,
+  "pending_followup_text": null,
+  "feedback_requested": false,
+  "feedback_text": null,
+  "feedback_audio": null,
+  "cached_analysis": null,
+  "hr_candidates": [],
+  "file_resumes": {}
+}

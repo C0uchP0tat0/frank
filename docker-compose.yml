@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  hr-bot-frank:
+    build: .
+    container_name: hr-bot-frank
+    restart: unless-stopped
+    environment:
+      - TELEGRAM_BOT_TOKEN=${TELEGRAM_BOT_TOKEN}
+    volumes:
+      # Персистентное хранение данных
+      - ./downloads:/app/downloads
+      - ./reports:/app/reports
+      - ./state:/app/state
+      - ./media:/app/media
+      - ./vacancies.json:/app/vacancies.json:ro
+    env_file:
+      - .env
+    networks:
+      - hr-bot-network-frank
+
+networks:
+  hr-bot-network-frank:
+    driver: bridge
